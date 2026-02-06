@@ -25,14 +25,17 @@
   }
 }
 
-.header .header-link {
-  display: inline-block;
+.header .header-Link {
+  display: flex;
+  align-items: center;
   padding: 6px 9.5px;
   border-radius: 2px;
   cursor: pointer;
-  text-decoration: none;
+  text-decoration: none; /* This removes the purple underline */
   border: 1px solid rgba(0, 0, 0, 0);
+  color: white; /* Ensures text is white */
 }
+
 
 .header .header-link:hover {
   border: 1px solid white;
@@ -103,13 +106,13 @@
   justify-content: end;
 }
 
-.header .orders-link {
+.header .orders-Link {
   color: white;
-
   display: flex;
   align-items: center;
   padding-left: 13px;
   padding-right: 13px;
+  text-decoration: none;
 }
 
 .header .orders-text {
@@ -118,11 +121,12 @@
   font-weight: 700;
 }
 
-.header .cart-link {
+.header .cart-Link {
   color: white;
   display: flex;
   align-items: center;
   position: relative;
+  text-decoration: none;
 }
 
 .header .cart-icon {
@@ -141,9 +145,10 @@
   font-weight: 700;
 
   position: absolute;
-  top: 8.5px;
-  right: 46px;
-
-  width: 26px;
+  top: 8px; 
+  left: 20px; 
+  right: 40px;
+  
+  width: 20px;
   text-align: center;
 }
