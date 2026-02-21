@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import { HomePage } from './Pages/home/HomePage';
 import { CheckoutPage } from './Pages/Checkout/CheckoutPage';
 import { OrderPage } from './Pages/Orders/OrderPage';
-import { Tracking } from './Pages/Tracking';
+import { Tracking } from './Pages/TrackingPage';
 import './App.css'
 function App() {
    const [cart, setCart] = useState([]);
