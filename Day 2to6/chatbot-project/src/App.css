@@ -1,0 +1,46 @@
+
+      .app-container {
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+/* Container jo MessageInput aur Clear button ko hold karta hai */
+.input-row {
+  display: flex;
+  align-items: center; /* Vertical center alignment */
+  justify-content: center;
+  gap: 0px; /* Gap hum buttons ki margin se control karenge */
+  margin-bottom: 60px; /* Jo pehle input-container mein tha */
+  width: 100%;
+}
+
+.clear-button {
+  background-color: white;
+  border: 1px solid #d1d1d1; 
+  color: black;
+  
+  padding: 12px 20px; 
+  margin-left: 10px;
+  border-radius: 10px;
+  
+  cursor: pointer;
+  font-size: 15px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  transition: background-color 0.2s;
+}
+
+.clear-button:hover {
+  background-color: #f8f9fa;
+}
+
+.input-container {
+  margin-bottom: 0px !important; 
+  flex-grow: 1; 
+}

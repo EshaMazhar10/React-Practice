@@ -12,14 +12,26 @@
 
     <script src="https://unpkg.com/supersimpledev/babel.js"></script>
     <script type="text/babel">
-        const btn = <button> hello </button>
-        const div = (<div>
-              <button> hello </button>
-              <p>Welcome to day:1 {4 + 5}</p>
-            </div>);
+       
+       function App(){
+        return(
+            <div>
+              <p>Practice questions </p>
+              <input placeholder = "Email"/>
+              <div>
+                  <input type = "Password" placeholder = "Password"/>
+             </div>
+
+             <> 
+                <button>Login</button>
+                <button>Sign up</button>
+             </>
+            </div>
+        );
+       } 
 
       const container = document.querySelector('.js-container');
-      ReactDOM.createRoot(container).render(div);
+      ReactDOM.createRoot(container).render(<App />);
     </script>
   </body>
 </html>
